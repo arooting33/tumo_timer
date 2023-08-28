@@ -6,9 +6,8 @@ min = int(input("Enter minutes: "))
 sec = int(input("Enter seconds: "))
 
 
-
 def count_down():
-
+    global hour, min, sec  # Declare as global to modify them
     while hour > 0 or min > 0 or sec > 0:
         hour_str = f"{hour:02d}"   # formatting strings for printing
         minute_str = f"{min:02d}"
